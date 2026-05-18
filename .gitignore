@@ -1,0 +1,51 @@
+# Generated outputs — regenerate with python3.13 main.py
+outputs/
+
+# Generated data artefacts
+data/TB_Bangladesh_Review_Data.xlsx
+
+# Large shapefiles — download separately (see README)
+data/bgd_adm_bbs_20201113_shp/
+
+# Reference PDFs
+TB papers/
+
+# Claude Code local settings
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+*.tmp
