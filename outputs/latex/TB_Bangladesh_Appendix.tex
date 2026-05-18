@@ -1,0 +1,416 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{longtable}
+\usepackage{geometry}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{float}
+\usepackage{rotating}
+\usepackage{hyperref}
+
+%% subcaption styling
+\captionsetup[subfigure]{labelfont=bf, textfont=normalfont,
+                          singlelinecheck=false, justification=raggedright}
+
+\geometry{margin=2.5cm}
+
+\graphicspath{{../figures/}{../maps/}}
+\DeclareGraphicsExtensions{.png}
+
+\title{TB in Bangladesh: Data Appendix\\
+       \large Supplementary Tables and Figures}
+\author{TB Bangladesh Review}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\clearpage
+
+%% ─── Tables ────────────────────────────────────────────────────────────────
+\section{Supplementary Tables}
+
+%% Tables 1A and 1B share the counter value "1"; label suffix set manually.
+\renewcommand{\thetable}{1A}
+\input{table1a_overview}
+\clearpage
+
+\addtocounter{table}{-1}%   keep counter at 1 for the B sub-table
+\renewcommand{\thetable}{1B}
+\input{table1b_risk_profiles}
+\renewcommand{\thetable}{\arabic{table}}%  restore normal numbering
+\clearpage
+
+\input{table2_dataset}
+\clearpage
+
+\input{table3_descriptive_stats}
+\clearpage
+
+\input{table1_burden}
+\clearpage
+
+\input{table2_notifications}
+\clearpage
+
+\input{table3_outcomes}
+\clearpage
+
+\input{table4_division_cumulative}
+\clearpage
+
+\input{table5_socioeconomic}
+\clearpage
+
+\input{table6_environmental}
+\clearpage
+
+\input{table7_division_incidence}
+\clearpage
+
+\input{table8_risk_factors}
+\clearpage
+
+%% ─── Figures ───────────────────────────────────────────────────────────────
+\section{Supplementary Figures}
+\noindent\textit{Figures are ordered to match the narrative flow of the review:
+national burden $\to$ programme performance $\to$ demographics $\to$
+geographic distribution $\to$ determinants $\to$ statistical analysis.
+Multi-panel figures use lettered sub-panels (A, B, C\ldots).}
+\bigskip
+
+%% Figure 1 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  %% Panel A — full width on top
+  \begin{subfigure}[t]{\textwidth}
+    \includegraphics[width=\textwidth]{fig1_incidence_trend}
+    \subcaption{Estimated TB burden versus notified cases, 2000--2024.
+      The shaded blue band is the WHO 95\,\% confidence interval for estimated incidence;
+      the orange filled area represents the detection gap (undetected cases).
+      The rapid convergence after 2010 reflects scaled-up DOTS and GeneXpert deployment.}
+    \label{fig:1a}
+  \end{subfigure}
+  \vspace{0.8em}
+  %% Panels B and C — side by side
+  \begin{subfigure}[t]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{fig2_mortality_trend}
+    \subcaption{Estimated TB mortality rate (per 100\,000, HIV-negative) with 95\,\%
+      confidence interval.  Mortality fell from $\sim$75 to $\sim$27 per 100\,000,
+      a $>$60\,\% decline over 25 years.}
+    \label{fig:1b}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{fig4_hivtb}
+    \subcaption{Estimated TB-HIV co-infection incidence rate (per 100\,000).
+      Bangladesh maintains HIV prevalence $<0.1$\,\%; the plateau since $\sim$2012
+      reflects the low but stable co-infection background.}
+    \label{fig:1c}
+  \end{subfigure}
+  \caption{\textbf{National TB epidemiological trends --- Bangladesh, 2000--2024.}
+    Panel~(A) contextualises absolute burden against detection capacity;
+    panels~(B) and~(C) track mortality and HIV co-infection trajectories.
+    Together they establish the epidemiological arc of Bangladesh's TB response over 25 years.
+    \textit{Source: WHO Global TB Programme burden estimates and notifications datasets.}}
+  \label{fig:epi_trends}
+\end{figure}
+\clearpage
+
+%% Figure 2 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[t]{0.56\textwidth}
+    \includegraphics[width=\textwidth]{fig3_cdr_tsr}
+    \subcaption{Case Detection Rate (CDR, \%) and Treatment Success Rate (TSR, \%)
+      with key NTP programme milestones.  Bangladesh surpassed the WHO 90\,\%
+      TSR target by 2009 and has sustained it since; CDR crossed 80\,\% in 2019
+      before a COVID-19-related dip in 2020--21.}
+    \label{fig:2a}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.42\textwidth}
+    \includegraphics[width=\textwidth]{fig12_mdr_trend}
+    \subcaption{Confirmed RR/MDR-TB cases (bars, left axis) and proportion of
+      total notified cases (line, right axis), 2014--2024.
+      Absolute case counts have risen despite a declining proportion,
+      signalling an absolute drug-resistance burden that requires sustained vigilance.}
+    \label{fig:2b}
+  \end{subfigure}
+  \caption{\textbf{National TB programme performance --- Bangladesh, 2000--2024.}
+    Panel~(A) shows the trajectory of case-finding and treatment success alongside
+    the four pivotal NTP milestones (DOTS expansion 2001, strategic plan II 2007,
+    GeneXpert rollout 2013, COVID-19 disruption 2020).
+    Panel~(B) tracks the emerging drug-resistance challenge.
+    Both indicators are prerequisites for achieving WHO End-TB targets by 2030.
+    \textit{Source: WHO Global TB Programme.}}
+  \label{fig:prog_perf}
+\end{figure}
+\clearpage
+
+%% Figure 3 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig5_sex_age_distribution}
+  \caption{\textbf{TB notifications by sex and age group --- Bangladesh, 2012--2024.}
+    Stacked bars show four demographic strata: males $\geq$15 (dominant stratum, blue),
+    females $\geq$15 (green), males 0--14 (orange), and females 0--14 (red).
+    Adult males consistently account for $\sim$55\,\% of all notifications,
+    consistent with the global pattern of higher TB exposure and prevalence in working-age men.
+    The decline in 2020 reflects COVID-19-related health-service disruption;
+    the subsequent rebound demonstrates programme resilience.
+    Sex- and age-disaggregated data available from 2012 onward.
+    \textit{Source: WHO Global TB Programme notifications dataset.}}
+  \label{fig:demographics}
+\end{figure}
+\clearpage
+
+%% Figure 4 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[t]{\textwidth}
+    \includegraphics[width=\textwidth, height=0.28\textheight, keepaspectratio]{map5_south_asia_context}
+    \subcaption{TB incidence rate (per 100\,000) across South and Southeast Asia ---
+      most recent WHO estimates.  Bangladesh (red border) carries one of the region's
+      highest absolute burdens, second only to India in total case count,
+      yet its incidence rate is lower than several neighbouring countries.}
+    \label{fig:4a}
+  \end{subfigure}
+  \vspace{0.8em}
+  \begin{subfigure}[t]{0.50\textwidth}
+    \includegraphics[width=\textwidth, height=0.30\textheight, keepaspectratio]{map4_incidence_2024}
+    \subcaption{Division-level TB incidence rate (per 100\,000) --- Bangladesh, 2024.
+      Dhaka and Chattogram divisions record the highest rates,
+      driven by population density and urban migration.}
+    \label{fig:4b}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.46\textwidth}
+    \includegraphics[width=\textwidth, height=0.30\textheight, keepaspectratio]{map6_incidence_reduction}
+    \subcaption{Proportional reduction in TB incidence rate by division, 2000$\to$2024.
+      Greener shading indicates greater improvement.
+      $\dagger$Mymensingh division established 2015; reduction calculated from 2015 baseline.}
+    \label{fig:4c}
+  \end{subfigure}
+  \caption{\textbf{Geographic distribution of TB burden --- regional context and within-country variation.}
+    Panel~(A) situates Bangladesh within the South Asian high-burden region.
+    Panel~(B) shows the within-country distribution in 2024, highlighting
+    the urban concentration of disease.
+    Panel~(C) quantifies progress: all divisions achieved at least a 4\,\% reduction,
+    but the magnitude varies substantially, pointing to persistent geographic inequities.
+    \textit{Sources: WHO Global TB Programme; NTP Bangladesh / DGHS Annual Reports;
+    Natural Earth 1:110m boundaries; OCHA HDX Bangladesh Admin Boundaries.}}
+  \label{fig:geo_dist}
+\end{figure}
+\clearpage
+
+%% Figure 5 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{map3_incidence_small_multiples}
+  \caption{\textbf{Division-wise TB incidence rate (per 100\,000) at key years ---
+    Bangladesh, 2000--2024.}
+    Each panel label shows both the incidence rate and absolute notified case count.
+    The progression from 2000 to 2024 illustrates the uneven pace of decline:
+    Dhaka consistently leads in absolute burden; Mymensingh appears from 2015
+    (carved from Dhaka division); all divisions show declining rates by 2020--24,
+    accelerated by intensified case-finding efforts.
+    \textit{Source: NTP Bangladesh / DGHS Annual Reports.}}
+  \label{fig:geo_temporal}
+\end{figure}
+\clearpage
+
+%% Figure 6 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[t]{\textwidth}
+    \includegraphics[width=\textwidth]{fig6_division_heatmap}
+    \subcaption{Division-wise TB incidence rate heatmap, 2000--2024.
+      Colour intensity encodes incidence per 100\,000.
+      Dhaka (darkest) has remained the highest-burden division throughout;
+      Mymensingh data begin in 2015.}
+    \label{fig:6a}
+  \end{subfigure}
+  \vspace{0.8em}
+  \begin{subfigure}[t]{\textwidth}
+    \includegraphics[width=\textwidth]{fig7_division_cumulative}
+    \subcaption{Cumulative TB cases (left) and estimated deaths (right) by division,
+      2000--2024, sorted by descending case count.
+      Dhaka accounts for $\sim$28\,\% of all cumulative cases;
+      together Dhaka and Chattogram represent nearly half the national burden.}
+    \label{fig:6b}
+  \end{subfigure}
+  \caption{\textbf{Division-level TB burden --- temporal heatmap and cumulative summary,
+    Bangladesh 2000--2024.}
+    Panel~(A) reveals year-on-year trends within each division;
+    panel~(B) converts those trends into cumulative burden for direct comparison
+    across the eight administrative units.
+    The contrast between Dhaka and Barishal ($\sim$7$\times$ difference in cumulative cases)
+    underscores the need for geographically targeted resource allocation.
+    \textit{Source: NTP Bangladesh / DGHS Annual Reports.}}
+  \label{fig:div_burden}
+\end{figure}
+\clearpage
+
+%% Figure 7 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[t]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{map1_cumulative_cases}
+    \subcaption{Cumulative TB cases by division, 2000--2024.
+      Darker shading indicates higher absolute case burden.}
+    \label{fig:7a}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.48\textwidth}
+    \includegraphics[width=\textwidth]{map2_cumulative_deaths}
+    \subcaption{Estimated cumulative TB deaths by division, 2000--2024.
+      Deaths estimated by applying the national case-fatality ratio to division case counts.}
+    \label{fig:7b}
+  \end{subfigure}
+  \caption{\textbf{Cumulative geographic TB burden --- Bangladesh, 2000--2024.}
+    The spatial concentration of cumulative cases and deaths mirrors population density:
+    Dhaka and Chattogram divisions together bear $\sim$43\,\% of the 25-year case total
+    and an equivalent share of estimated mortality.
+    Barishal records the lowest burden in both panels, consistent with its
+    lower population density and historically better TB indicators.
+    \textit{Source: NTP Bangladesh / DGHS Annual Reports.}}
+  \label{fig:geo_cumul}
+\end{figure}
+\clearpage
+
+%% Figure 8 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[t]{\textwidth}
+    \includegraphics[width=\textwidth, height=0.38\textheight, keepaspectratio]{fig10_socioeconomic_trends}
+    \subcaption{Socioeconomic indicator trends, 2000--2024.
+      GDP per capita rose $\sim$5$\times$ in constant USD;
+      poverty (below \$2.15/day) fell from 41\,\% to $<$6\,\%;
+      the Human Development Index climbed from 0.47 to 0.68;
+      and urban population grew from $\sim$25\,\% to $\sim$40\,\% of total.}
+    \label{fig:8a}
+  \end{subfigure}
+  \vspace{0.8em}
+  \begin{subfigure}[t]{0.60\textwidth}
+    \centering
+    \includegraphics[width=\textwidth, height=0.32\textheight, keepaspectratio]{fig8_hdi_vs_cdr}
+    \subcaption{HDI vs.\ Case Detection Rate --- each point is one year,
+      colour-coded by calendar year.  The strong positive correlation
+      ($r \approx +0.97$) confirms that human development gains
+      are a structural enabler of improved TB case-finding.}
+    \label{fig:8b}
+  \end{subfigure}
+  \caption{\textbf{Socioeconomic determinants of TB --- Bangladesh, 2000--2024.}
+    Panel~(A) documents Bangladesh's remarkable development trajectory over the study period.
+    Panel~(B) demonstrates that this trajectory closely tracks the country's
+    capacity to detect TB cases: as the HDI rose, CDR rose in near-lockstep,
+    suggesting that investments in education, health infrastructure and income
+    simultaneously strengthened the TB response.
+    \textit{Sources: World Bank Open Data (GDP, poverty, urbanisation);
+    UNDP Human Development Reports; WHO Global TB Programme.}}
+  \label{fig:socioeco}
+\end{figure}
+\clearpage
+
+%% Figure 9 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[t]{0.54\textwidth}
+    \includegraphics[width=\textwidth]{fig9_environmental}
+    \subcaption{National mean PM\textsubscript{2.5} ($\mu$g\,m$^{-3}$, left axis)
+      and mean annual temperature at the BMD Dhaka station (\textdegree C, right axis),
+      2000--2024.
+      Bangladesh consistently exceeds both the pre-2021 WHO guideline (10\,$\mu$g\,m$^{-3}$)
+      and the 2021 revised guideline (5\,$\mu$g\,m$^{-3}$) by a factor of $5$--$10\times$,
+      constituting a persistent environmental TB risk modifier.}
+    \label{fig:9a}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.44\textwidth}
+    \includegraphics[width=\textwidth]{fig13_risk_factors}
+    \subcaption{TB-associated behavioural and nutritional risk factor trends, 2000--2024.
+      Undernourishment declined steadily; child stunting fell from $\sim$51\,\%
+      to $\sim$24\,\% of under-fives; adult smoking prevalence decreased markedly;
+      health expenditure as a share of GDP remained low but stable.}
+    \label{fig:9b}
+  \end{subfigure}
+  \caption{\textbf{Environmental and behavioural risk factors for TB ---
+    Bangladesh, 2000--2024.}
+    Panel~(A) highlights air-pollution exposure as a structural environmental driver:
+    PM\textsubscript{2.5} concentrations far exceed safe limits throughout the study period,
+    impairing respiratory defences and amplifying susceptibility to airborne \textit{M.\ tuberculosis}.
+    Panel~(B) shows that while nutritional and smoking risks have improved substantially,
+    persistent undernutrition and a low health-expenditure share remain priority targets.
+    \textit{Sources: World Bank (PM\textsubscript{2.5}, undernourishment, stunting, smoking,
+    health expenditure); WHO GHO; CAMS/Open-Meteo; BMD.}}
+  \label{fig:risk_factors}
+\end{figure}
+\clearpage
+
+%% Figure 10 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[t]{0.44\textwidth}
+    \includegraphics[width=\textwidth]{fig11_poverty_vs_tb}
+    \subcaption{Poverty rate vs.\ TB incidence rate, 2000--2024.
+      Each point is one year, colour-coded by calendar year;
+      circled points are World Bank HIES survey years.
+      The near-horizontal scatter reveals that TB incidence
+      has remained remarkably flat ($\sim$220 per 100\,000) even as poverty
+      fell from 41\,\% to $<$6\,\%, suggesting that detection improvements
+      have kept notified incidence stable as the true burden declined.}
+    \label{fig:10a}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.54\textwidth}
+    \includegraphics[width=\textwidth]{fig14_correlation_matrix}
+    \subcaption{Pearson correlation matrix of TB outcomes and determinants.
+      TB incidence and mortality (bold labels) show strong negative correlations
+      with CDR, HDI, GDP and health expenditure ($r < -0.95$),
+      and strong positive correlations with poverty ($r > +0.95$).
+      Correlations partly reflect shared secular time trends;
+      causal inference requires covariate adjustment.}
+    \label{fig:10b}
+  \end{subfigure}
+  \caption{\textbf{Statistical associations between TB outcomes and key determinants ---
+    Bangladesh, 2000--2024.}
+    Panel~(A) illustrates the decoupling of poverty reduction from notified TB incidence,
+    consistent with rising case detection masking a declining true burden.
+    Panel~(B) provides a system-level view: virtually all socioeconomic and
+    programme indicators correlate at $|r| > 0.9$ with TB outcomes,
+    underscoring the multi-factorial nature of the epidemic and the importance
+    of addressing poverty, nutrition, environment and health-system capacity simultaneously.
+    \textit{Sources: WHO Global TB Programme; World Bank Open Data; UNDP; BMD.}}
+  \label{fig:stats}
+\end{figure}
+\clearpage
+
+%% Figure 11 ─────────────────────────────────────────────────────────────────
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig15_pairplot}
+  \caption{\textbf{Pairplot of TB outcomes against key determinants ---
+    Bangladesh, 2000--2024.}
+    Each of the 64 cells shows the bivariate relationship between one pair of
+    the eight variables: TB incidence rate, TB mortality rate, GDP per capita,
+    Human Development Index, poverty rate, undernourishment, BCG coverage,
+    and PM\textsubscript{2.5} concentration.
+    Points are colour-coded by time period:
+    2000--08 (blue), 2009--16 (green), 2017--24 (red).
+    Diagonal cells show kernel density estimates for each variable;
+    lower-triangle cells show scatter plots; upper-triangle cells show scatter overlays.
+    TB incidence and mortality labels are \textbf{bold}.
+    The clear period-based clustering confirms the structural shift in Bangladesh's
+    TB epidemiology across three phases of the national response.
+    \textit{Sources: WHO Global TB Programme; World Bank Open Data; UNDP; BMD.}}
+  \label{fig:pairplot}
+\end{figure}
+
+\end{document}

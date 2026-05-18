@@ -1,6 +1,3 @@
-# Generated outputs — regenerate with python3.13 main.py
-outputs/
-
 # Generated data artefacts
 data/TB_Bangladesh_Review_Data.xlsx
 
@@ -45,6 +42,15 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+
+# LaTeX auxiliary files
+outputs/latex/out/
+outputs/latex/*.aux
+outputs/latex/*.toc
+outputs/latex/*.out
+outputs/latex/*.fls
+outputs/latex/*.fdb_latexmk
+outputs/latex/*.synctex.gz
 
 # Logs / temp
 *.log
